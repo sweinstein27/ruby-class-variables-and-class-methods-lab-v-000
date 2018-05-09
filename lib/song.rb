@@ -12,7 +12,7 @@ class Song
     @@count += 1
     if !@@genres.include?(genre)
       @@genres << genre
-    elsif !@@artist.include?(artist)
+    elsif !@@artists.include?(artist)
       @@artists << artist
     end
   end
