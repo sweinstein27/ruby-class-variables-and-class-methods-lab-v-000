@@ -21,11 +21,11 @@ class Song
     return @@count
   end
 
-  def genre
+  def genres
     return @@genres
   end
 
-  def artist
+  def artists
     return @@artists
   end
 
