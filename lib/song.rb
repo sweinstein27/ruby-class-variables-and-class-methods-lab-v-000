@@ -16,7 +16,7 @@ class Song
 
 
   def count
-    return self
+    return @@count
   end
 
   def genres
