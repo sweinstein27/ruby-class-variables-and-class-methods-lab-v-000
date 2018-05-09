@@ -4,7 +4,7 @@ class Song
   @@count = 0
 
   @@genres = []
-  @@artist = []
+  @@artists = []
   def initialize(name, artist, genre)
     @name = name
     @artist = artist
@@ -13,7 +13,7 @@ class Song
     if !@@genres.include?(genre)
       @@genres << genre
     elsif !@@artist.include?(artist)
-      @@artist << artist
+      @@artists << artist
   end
 
   def count
@@ -25,11 +25,15 @@ class Song
   end
 
   def artist
-    return @@artist
+    return @@artists
   end
 
   def genre_count
     @@genres.to_histogram
+  end
+
+  def artist_count
+    @@artists.to_histogram
   end
 
 end
