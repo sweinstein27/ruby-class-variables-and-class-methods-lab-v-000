@@ -14,6 +14,7 @@ class Song
       @@genres << genre
     elsif !@@artist.include?(artist)
       @@artists << artist
+    end
   end
 
   def count
