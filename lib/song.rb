@@ -28,4 +28,8 @@ class Song
     return @@artist
   end
 
+  def genre_count
+    @@genres.to_histogram
+  end
+
 end
